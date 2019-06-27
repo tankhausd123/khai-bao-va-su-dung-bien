@@ -10,20 +10,17 @@ function myFunction(){
 
     if (from == 'vnd' && to == 'usd2'){
         result = amount / 23000;
-        document.getElementById('result').innerHTML=result;
     }
 
-    if (from == 'usd'  && to == 'vnd2'){
+    else if (from == 'usd'  && to == 'vnd2'){
         result = amount*23000;
-        document.getElementById('result').innerHTML=result;
     }
-    if (from == 'vnd' && to == 'vnd2'){
+    else if (from == 'vnd' && to == 'vnd2'){
         result =amount;
-        document.getElementById('result').innerHTML=result;
     }
-    if (from == 'usd' && to =='usd2') {
+    else if (from == 'usd' && to =='usd2') {
         result =amount;
-        document.getElementById('result').innerHTML=result;
     }
+    document.getElementById('result').innerHTML=result;
 
 }
